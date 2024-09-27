@@ -211,6 +211,42 @@
             color: #18bc9c; /* 悬停时变为亮绿色 */
         }
 
+        /* 专门为 Contact Information section 定制的样式 */
+        #contact-information {
+            background-color: #2c3e50; /* 深蓝色背景 */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* 强化阴影效果 */
+            margin-bottom: 40px; /* 与其他部分分隔开 */
+            border-left: 4px solid #4bdffa; /* 左侧红色边框 */
+        }
+
+        #contact-information h2 {
+            color: #4bdffa; /* 红色标题 */
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center; /* 居中对齐 */
+            margin-bottom: 20px;
+        }
+
+        #contact-information p {
+            font-size: 1.1em;
+            color: #ecf0f1; /* 浅灰色文字 */
+            margin-bottom: 10px;
+        }
+
+        #contact-information a {
+            color: #3498db; /* 链接为蓝色 */
+            text-decoration: none;
+            border-bottom: 1px dashed #3498db; /* 下划线为虚线 */
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+
+        #contact-information a:hover {
+            color: #e74c3c; /* 悬停时颜色变为红色 */
+            border-color: #e74c3c;
+        }
+
             /* 专门为 Project Experience section 定制的样式 */
         #project-experience {
             background-color: #28343b; /* 深色背景 */
@@ -226,7 +262,7 @@
             color: #ff6f61; /* 橙色标题，增强对比 */
             font-size: 2em; /* 大标题 */
             font-weight: bold; /* 加粗 */
-            text-align: center; /* 左对齐 */
+            text-align: center; /* 居中对齐 */
             margin-bottom: 20px;
         }
 
@@ -380,12 +416,13 @@
 </section>
 
 
-<section>
+<section id="contact-information">
     <h2>Contact Information</h2>
     <p>Email 1: <a href="mailto:jiahang.wang@mail.mcgill.ca">jiahang.wang@mail.mcgill.ca</a></p>
     <p>Email 2: <a href="mailto:jiahangwang72@gmail.com">jiahangwang72@gmail.com</a></p>
-    <p>Phone: +1 4383503113</p>
+    <p>Phone: +1 438-350-3113</p>
 </section>
+
 
 <section id="project-experience">
     <h2>Academic Experiences</h2>

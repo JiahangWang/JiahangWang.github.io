@@ -8,96 +8,233 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #1f2a30;
             margin: 0;
             padding: 0;
-            color: #333;
+            color: #e0e0e0;
         }
+
+        /* General styles for the webpage */
         header {
-            background-color: #2c3e50;
-            color: white;
+            background-color: #2b3a42;
+            color: #ffffff;
             text-align: center;
             padding: 2em 0;
+            border-bottom: 5px solid #18bc9c;
         }
+
         section {
             max-width: 800px;
             margin: 30px auto;
             padding: 25px;
-            background-color: #ffffff;
+            background-color: #2e3d45;
             border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
         }
+
         h1, h2 {
-            color: #2c3e50;
+            color: #18bc9c;
             margin-bottom: 20px;
         }
-        p {
-            line-height: 1.8;
-            font-size: 1.1em;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            background: #2c3e50;
-            color: white;
-            margin: 10px 0;
-            padding: 12px;
-            border-radius: 5px;
-        }
+
         footer {
             text-align: center;
             margin: 40px 0;
-            color: #555;
+            color: #b0b0b0;
         }
+
         footer p {
             margin: 0;
         }
+
         a {
-            color: #2c3e50;
-            text-decoration: none;
-            border-bottom: 1px solid #2c3e50;
-        }
-        a:hover {
             color: #18bc9c;
-            border-color: #18bc9c;
+            text-decoration: none;
+            border-bottom: 1px solid #18bc9c;
+            transition: color 0.3s ease, border-color 0.3s ease;
         }
+
+        a:hover {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+
+        /* 专门为 Skills section 定制的样式 */
+        #skills-section {
+            background-color: #1b2a33; /* 更深的背景色，增加对比 */
+            padding: 40px; /* 更大的内边距 */
+            border-radius: 15px; /* 更大的圆角 */
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* 强化的阴影，增强立体感 */
+            border: 2px solid #18bc9c; /* 添加绿色边框，使其更突出 */
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* 添加渐变效果 */
+        #skills-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(24, 188, 156, 0.2), transparent);
+            z-index: 0;
+            pointer-events: none; /* 不影响用户操作 */
+        }
+
+        #skills-section h2 {
+            color: #18bc9c; /* 亮绿色标题，更醒目 */
+            font-size: 2em; /* 增加字体大小 */
+            font-weight: bold; /* 加粗字体 */
+            text-align: center; /* 居中标题 */
+            margin-bottom: 30px;
+            z-index: 1;
+            position: relative;
+        }
+
+        #skills-section ul {
+            list-style-type: disc; /* 改为圆点符号，增强视觉效果 */
+            padding-left: 40px; /* 增加缩进 */
+            z-index: 1;
+            position: relative;
+        }
+
+        #skills-section li {
+            color: #ffffff; /* 列表项为纯白色，进一步提升对比度 */
+            font-size: 1.1em; /* 增加字体大小 */
+            line-height: 1.8; /* 增加行高，提升可读性 */
+            margin-bottom: 12px; /* 更大的间距 */
+            transition: color 0.3s ease; /* 增加悬停效果的过渡 */
+            z-index: 1;
+            position: relative;
+        }
+
+        #skills-section li:hover {
+            color: #18bc9c; /* 悬停时变为亮绿色 */
+    }
     </style>
+
 </head>
+
+
 <body>
 
 <header>
-    <h1>Welcome to My Personal Homepage</h1>
+    <h1>Welcome!</h1>
 </header>
 
 <section>
     <h2>About Me</h2>
-    <p>Hello! I am a senior undergraduate student specializing in [your field of study]. I am passionate about learning new technologies and applying them to real-world projects.</p>
+    <p>Hello! My name is Jiahang Wang. I am currently a senior undergraduate with a strong foundation in mathematics and computer science. My academic journey has equipped me with hands-on experience in machine learning, data analysis, web development, and backend programming. I have worked on diverse projects, from optimizing machine learning models to developing robust backend systems. I am passionate about applying my technical skills in Python, R, Java, and C, and I am always eager to learn new technologies and solve complex problems in real-world applications.</p>
 </section>
 
-<section>
+<section id="skills-section">
     <h2>Skills</h2>
     <ul>
-        <li>Programming Languages: Python, Java, C++</li>
-        <li>Web Development: HTML, CSS, JavaScript</li>
-        <li>Data Analysis and Processing</li>
-        <li>Foundations of Machine Learning</li>
+        <li>Proficient in Python and major packages like Pandas, Matplotlib, NumPy, scikit-learn, and PyTorch, as well as Jupyter.</li>
+        <li>Familiar with matlab programming</li>
+        <li>Proficient in R for data analysis, with experience in packages such as ggplot2, dplyr, tidyr, and caret.</li>
+        <li>Familiar with MySQL database creation and management.</li>
+        <li>Familiar with front-end languages: HTML, CSS, and JavaScript.</li>
+        <li>Proficient in Java, including major packages, data structures, design patterns, multithreading, reflection, and frameworks.</li>
+        <li>Knowledgeable in C language, MIPS assembly, basic circuit design, and OCaml, with hands-on electrical work experience.</li>
+        <li>Knowledgeable in Linux system operations and cloud servers.</li>
+        <li>Familiar with Git version control and JupyterLab.</li>
+        <li>Strong foundation in mathematics.</li>
+        <li>Familiar with LaTeX for academic writing.</li>
     </ul>
+</section>
+
+
+<section>
+    <h2>Contact Information</h2>
+    <p>Email: <a href="mailto:example@example.com">jiahang.wang@mail.mcgill.ca</a></p>
+    <p>Phone: +143 83 503113</p>
 </section>
 
 <section>
     <h2>Project Experience</h2>
-    <p><strong>Project 1:</strong> XXX</p>
-    <p>Description: A brief summary of the project and your contributions to it.</p>
-    <p><strong>Project 2:</strong> YYY</p>
-    <p>Description: A short description of another project and your role in it.</p>
-</section>
 
-<section>
-    <h2>Contact Information</h2>
-    <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
-    <p>Phone: +123 456 789</p>
+    <p><strong>Optimizing Machine Learning Models for Boston Housing and Wine Classification</strong></p>
+    <p>Machine Learning Course - Main Coder and Co-Writer (September 20, 2023 - October 5, 2023)</p>
+    <ul>
+        <li>Implemented linear regression for Boston Housing dataset, achieving a lower Mean Squared Error, and logistic regression for Wine dataset, improving classification accuracy.</li>
+        <li>Optimized hyperparameters like learning rates and batch sizes, enhancing model efficiency.</li>
+        <li>Analyzed the impact of different data proportions and normalization techniques on model performance.</li>
+    </ul>
+
+    <p><strong>Classification of Image Data with Multilayer Perceptrons and Convolutional Neural Networks</strong></p>
+    <p>Machine Learning Course - Main Coder and Co-Writer (October 15, 2023 - October 30, 2023)</p>
+    <ul>
+        <li>Investigated neural network configurations for image classification using Fashion MNIST and CIFAR-10 datasets.</li>
+        <li>Analyzed the impact of various factors such as model depth, activation functions, regularization, and optimizers on network performance.</li>
+        <li>Achieved up to 91.2% accuracy with Convolutional Neural Networks, outperforming Multilayer Perceptrons.</li>
+    </ul>
+
+    <p><strong>Comparative Analysis of Naive Bayes and BERT in Emotion Classification of Textual Data</strong></p>
+    <p>Machine Learning Course - Main Coder and Co-Writer (November 2, 2023 - November 15, 2023)</p>
+    <ul>
+        <li>Conducted a study comparing Naive Bayes and BERT models on emotion classification using the 'Emotion' dataset from Hugging Face.</li>
+        <li>Demonstrated BERT's advanced capabilities in understanding emotional nuances, outperforming traditional models.</li>
+        <li>Provided insights into the effectiveness of pretraining in BERT's performance.</li>
+    </ul>
+
+    <p><strong>Reproducibility Report on Offline Reinforcement Learning with Implicit Q-Learning (IQL)</strong></p>
+    <p>Machine Learning Course - Main Coder and Co-Writer (November 20, 2023 - December 7, 2023)</p>
+    <ul>
+        <li>Assessed the effectiveness of IQL in offline reinforcement learning, focusing on theoretical and practical aspects.</li>
+        <li>Conducted experiments replicating key claims of IQL, including performance and computational efficiency evaluations.</li>
+        <li>Performed an ablation study to analyze the impact of various parameters on IQL's performance.</li>
+    </ul>
+
+    <p><strong>Media Coverage Analysis of Taylor Swift: Sentiment and Focus in North America</strong></p>
+    <p>Data Science Course - Main Coder and Co-Writer (November 25, 2023 - December 11, 2023)</p>
+    <ul>
+        <li>Analyzed over 500 North American news articles using sentiment analysis techniques like TF-IDF.</li>
+        <li>Identified key themes in media portrayal of Taylor Swift, including career achievements and personal life.</li>
+        <li>Highlighted the importance of news APIs in unbiased data collection.</li>
+    </ul>
+
+    <p><strong>Implementing RRT Algorithm for Path Planning in Robotics</strong></p>
+    <p>Robotic Course - Main Coder (September 20, 2023 - December 6, 2023)</p>
+    <ul>
+        <li>Developed and analyzed the Rapidly-exploring Random Tree (RRT) algorithm for path planning in robotics.</li>
+        <li>Experimented with uniform and Gaussian sampling methods, optimizing step sizes and robot dimensions.</li>
+        <li>Achieved efficient path planning solutions through RRT optimization.</li>
+    </ul>
+
+    <p><strong>Combining PID Control and Reinforcement Learning for Inverted Pendulum System</strong></p>
+    <p>Robotic Course - Main Coder (September 20, 2023 - December 6, 2023)</p>
+    <ul>
+        <li>Developed a PID control system for an inverted pendulum simulation, enhancing stability and response accuracy.</li>
+        <li>Implemented Reinforcement Learning and Q-learning techniques to balance exploration and exploitation for optimal performance.</li>
+        <li>Compared traditional control methods with RL, demonstrating RL's effectiveness in uncertain environments.</li>
+    </ul>
+
+    <p><strong>Developing a Filtering Technique for Accelerometer Data and Analyzing Gyroscope Data in Dynamic Environments</strong></p>
+    <p>Robotic Course - Main Coder (November 5, 2023 - November 21, 2023)</p>
+    <ul>
+        <li>Designed a filtering technique for accelerometer data to accurately count steps, improving data reliability and noise reduction.</li>
+        <li>Analyzed gyroscope data using Arduino Nano 33 IoT chip to understand sensor behavior in dynamic environments.</li>
+        <li>Enhanced data processing for wearable devices, contributing to more accurate activity tracking.</li>
+    </ul>
+
+    <p><strong>Simulation and Comparison of Multi-Armed Bandit Algorithms</strong></p>
+    <p>Reinforcement Learning Course - Lead Programmer and Analyst (January 11, 2024 - January 25, 2024)</p>
+    <ul>
+        <li>Developed a simulator for Bernoulli multi-armed bandit problems to explore the performance of various RL algorithms like Epsilon Greedy, UCB, and Thompson Sampling.</li>
+        <li>Analyzed the impact of different parameters on performance and provided insights for parameter selection in different environments.</li>
+    </ul>
+
+    <p><strong>Performance Comparison of Sarsa, Expected Sarsa, and Hybrid Sarsa Q in Reinforcement Learning</strong></p>
+    <p>Reinforcement Learning Course - Lead Programmer and Analyst (January 30, 2024 - February 15, 2024)</p>
+    <ul>
+        <li>Implemented and evaluated Sarsa, Expected Sarsa, and Hybrid Sarsa Q algorithms in a reinforcement learning task using the "Taxi-v3" environment.</li>
+        <li>Investigated the effect of different learning rates and exploration temperatures on algorithm performance.</li>
+        <li>Compared algorithm performance across different hyperparameter combinations using custom visualizations.</li>
+    </ul>
+
 </section>
 
 <section>

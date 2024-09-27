@@ -59,6 +59,48 @@
             border-color: #ffffff;
         }
 
+        /* About Me section */
+        #about-me {
+            background-color: #2e3d45; /* 深灰色背景 */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        #about-me h2 {
+            color: #18bc9c;
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .profile-photo {
+            border-radius: 50%; /* 将图片变为圆形 */
+            width: 150px; /* 设置宽度 */
+            height: 150px; /* 设置高度 */
+            object-fit: cover; /* 确保图片的尺寸保持正确 */
+            margin-bottom: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+            border: 4px solid #18bc9c; /* 图片的绿色边框 */
+        }
+
+        #about-me p {
+            font-size: 1.1em;
+            color: #e0f7fa;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
         /* 专门为 Skills section 定制的样式 */
         #skills-section {
             background-color: #1b2a33; /* 更深的背景色，增加对比 */
@@ -112,7 +154,63 @@
 
         #skills-section li:hover {
             color: #18bc9c; /* 悬停时变为亮绿色 */
-    }
+        }
+
+            /* 专门为 Project Experience section 定制的样式 */
+        #project-experience {
+            background-color: #28343b; /* 深色背景 */
+            padding: 35px;
+            border-radius: 15px; /* 圆角 */
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* 强化的阴影 */
+            border-left: 4px solid #ff6f61; /* 左侧突出橙色边框 */
+            margin-bottom: 40px; /* 与其他部分分隔开 */
+            position: relative;
+        }
+
+        #project-experience h2 {
+            color: #ff6f61; /* 橙色标题，增强对比 */
+            font-size: 2em; /* 大标题 */
+            font-weight: bold; /* 加粗 */
+            text-align: left; /* 左对齐 */
+            margin-bottom: 20px;
+        }
+
+        #project-experience p {
+            font-size: 1.3em; /* 提升段落字体大小 */
+            color: #99dce8; /* 浅蓝色文字 */
+            line-height: 1.7; /* 增加行距提升可读性 */
+            margin-bottom: 15px;
+        }
+
+        #project-experience ul {
+            list-style-type: square; /* 方块符号 */
+            padding-left: 25px; /* 增加缩进 */
+        }
+
+        #project-experience li {
+            color: #ffffff; /* 列表项为白色 */
+            font-size: 1.05em; /* 稍微增大字体 */
+            margin-bottom: 12px; /* 增加每个列表项间距 */
+            line-height: 1.8;
+            transition: color 0.3s ease;
+        }
+
+        #project-experience li:hover {
+            color: #ff6f61; /* 悬停时列表项变为橙色 */
+        }
+
+        /* 加入一个背景的微光效果 */
+        #project-experience::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, rgba(255, 111, 97, 0.1), transparent);
+            z-index: 0;
+            pointer-events: none;
+        }
     </style>
 
 </head>
@@ -124,9 +222,13 @@
     <h1>Welcome!</h1>
 </header>
 
-<section>
+
+<section id="about-me">
     <h2>About Me</h2>
-    <p>Hello! My name is Jiahang Wang. I am currently a senior undergraduate with a strong foundation in mathematics and computer science. My academic journey has equipped me with hands-on experience in machine learning, data analysis, web development, and backend programming. I have worked on diverse projects, from optimizing machine learning models to developing robust backend systems. I am passionate about applying my technical skills in Python, R, Java, and C, and I am always eager to learn new technologies and solve complex problems in real-world applications.</p>
+    <div class="profile-container">
+        <img src="./img/me.jpg" alt="Your Name" class="profile-photo">
+        <p>Hello! My name is Jiahang Wang. I am currently a senior undergraduate with a strong foundation in mathematics and computer science. My academic journey has equipped me with hands-on experience in machine learning, data analysis, web development, and backend programming. I have worked on diverse projects, from optimizing machine learning models to developing robust backend systems. I am passionate about applying my technical skills in Python, R, Java, and C, and I am always eager to learn new technologies and solve complex problems in real-world applications.</p>
+    </div>
 </section>
 
 <section id="skills-section">
@@ -150,10 +252,10 @@
 <section>
     <h2>Contact Information</h2>
     <p>Email: <a href="mailto:example@example.com">jiahang.wang@mail.mcgill.ca</a></p>
-    <p>Phone: +143 83 503113</p>
+    <p>Phone: +1 4383503113</p>
 </section>
 
-<section>
+<section id="project-experience">
     <h2>Project Experience</h2>
 
     <p><strong>Optimizing Machine Learning Models for Boston Housing and Wine Classification</strong></p>

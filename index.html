@@ -59,7 +59,7 @@
             border-color: #ffffff;
         }
 
-        /* About Me section */
+        /* About Me section 定制样式 */
         #about-me {
             background-color: #2e3d45; /* 深灰色背景 */
             padding: 40px;
@@ -67,8 +67,16 @@
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
             margin-bottom: 40px;
             text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* 添加过渡效果 */
         }
 
+        /* 鼠标悬停时的悬浮效果 */
+        #about-me:hover {
+            transform: translateY(-10px); /* 向上悬浮10px */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7); /* 强化的阴影效果 */
+        }
+
+        /* 标题样式 */
         #about-me h2 {
             color: #18bc9c;
             font-size: 2em;
@@ -76,6 +84,7 @@
             margin-bottom: 20px;
         }
 
+        /* 个人信息容器 */
         .profile-container {
             display: flex;
             align-items: center;
@@ -83,6 +92,7 @@
             flex-direction: column;
         }
 
+        /* 个人照片样式 */
         .profile-photo {
             border-radius: 50%; /* 将图片变为圆形 */
             width: 150px; /* 设置宽度 */
@@ -91,8 +101,16 @@
             margin-bottom: 20px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
             border: 4px solid #18bc9c; /* 图片的绿色边框 */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* 添加过渡效果 */
         }
 
+        /* 鼠标悬停在照片上的效果 */
+        .profile-photo:hover {
+            transform: translateY(-5px); /* 照片轻微向上悬浮5px */
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* 加强阴影效果 */
+        }
+
+        /* 段落样式 */
         #about-me p {
             font-size: 1.1em;
             color: #e0f7fa;
@@ -110,8 +128,16 @@
             margin-bottom: 40px; /* 与其他部分分隔开 */
             border-left: 4px solid #f39c12; /* 左侧橙色边框 */
             position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* 添加过渡效果 */
         }
 
+        /* 鼠标悬停时的悬浮效果 */
+        #education:hover {
+            transform: translateY(-10px); /* 向上悬浮10px */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7); /* 强化的阴影效果 */
+        }
+
+        /* 标题样式 */
         #education h2 {
             color: #f39c12; /* 橙色标题 */
             font-size: 2em;
@@ -120,6 +146,7 @@
             text-align: center;
         }
 
+        /* 段落样式 */
         #education p {
             font-size: 1.1em;
             color: #d0e0e3; /* 浅蓝色文字 */
@@ -127,23 +154,27 @@
             margin-bottom: 10px;
         }
 
+        /* 日期样式 */
         #education span {
             float: right; /* 将日期右对齐 */
             color: #f7dc6f; /* 黄色日期字体 */
             font-size: 1em;
         }
 
+        /* 子标题样式 */
         #education h3 {
             color: #f7dc6f; /* 黄色子标题 */
             margin-top: 20px;
             margin-bottom: 10px;
         }
 
+        /* 列表样式 */
         #education ul {
             list-style-type: circle; /* 圆形符号 */
             padding-left: 25px;
         }
 
+        /* 列表项样式 */
         #education li {
             color: #e0f7fa; /* 列表项为浅蓝色 */
             font-size: 1.05em;
@@ -152,8 +183,55 @@
             transition: color 0.3s ease;
         }
 
+        /* 悬停在列表项时的效果 */
         #education li:hover {
             color: #f39c12; /* 悬停时变为橙色 */
+        }
+
+        /* Contact Information section 定制样式 */
+        #contact-information {
+            background-color: #2c3e50; /* 深蓝色背景 */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+            margin-bottom: 40px; /* 与其他部分分隔开 */
+            border-left: 4px solid #e74c3c; /* 左侧红色边框 */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* 添加过渡效果 */
+        }
+
+        /* 鼠标悬停时的悬浮效果 */
+        #contact-information:hover {
+            transform: translateY(-10px); /* 向上悬浮10px */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7); /* 加强阴影效果，模拟悬浮 */
+        }
+
+        /* 标题样式 */
+        #contact-information h2 {
+            color: #e74c3c; /* 红色标题 */
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* 段落样式 */
+        #contact-information p {
+            font-size: 1.1em;
+            color: #ecf0f1; /* 浅灰色文字 */
+            margin-bottom: 10px;
+        }
+
+        /* 链接样式 */
+        #contact-information a {
+            color: #3498db; /* 链接为蓝色 */
+            text-decoration: none;
+            border-bottom: 1px dashed #3498db; /* 下划线为虚线 */
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+
+        /* 链接悬停时的效果 */
+        #contact-information a:hover {
+            color: #e74c3c; /* 悬停时颜色变为红色 */
+            border-color: #e74c3c;
         }
 
         /* 专门为 Skills section 定制的样式 */
@@ -165,6 +243,13 @@
             border: 2px solid #18bc9c; /* 添加绿色边框，使其更突出 */
             position: relative;
             overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* 添加过渡效果 */
+        }
+
+        /* 鼠标悬停时的悬浮效果 */
+        #skills-section:hover {
+            transform: translateY(-10px); /* 向上悬浮10px */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7); /* 强化的阴影效果 */
         }
 
         /* 添加渐变效果 */
@@ -180,6 +265,7 @@
             pointer-events: none; /* 不影响用户操作 */
         }
 
+        /* 标题样式 */
         #skills-section h2 {
             color: #18bc9c; /* 亮绿色标题，更醒目 */
             font-size: 2em; /* 增加字体大小 */
@@ -190,6 +276,7 @@
             position: relative;
         }
 
+        /* 列表样式 */
         #skills-section ul {
             list-style-type: disc; /* 改为圆点符号，增强视觉效果 */
             padding-left: 40px; /* 增加缩进 */
@@ -197,6 +284,7 @@
             position: relative;
         }
 
+        /* 列表项样式 */
         #skills-section li {
             color: #ffffff; /* 列表项为纯白色，进一步提升对比度 */
             font-size: 1.1em; /* 增加字体大小 */
@@ -207,6 +295,7 @@
             position: relative;
         }
 
+        /* 列表项悬停效果 */
         #skills-section li:hover {
             color: #18bc9c; /* 悬停时变为亮绿色 */
         }
@@ -247,7 +336,7 @@
             border-color: #e74c3c;
         }
 
-            /* 专门为 Project Experience section 定制的样式 */
+        /* 专门为 Project Experience section 定制的样式 */
         #project-experience {
             background-color: #28343b; /* 深色背景 */
             padding: 35px;
@@ -256,8 +345,16 @@
             border-left: 4px solid #ff6f61; /* 左侧突出橙色边框 */
             margin-bottom: 40px; /* 与其他部分分隔开 */
             position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* 添加过渡效果 */
         }
 
+        /* 鼠标悬停时的悬浮效果 */
+        #project-experience:hover {
+            transform: translateY(-10px); /* 向上悬浮10px */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7); /* 强化的阴影效果 */
+        }
+
+        /* 标题样式 */
         #project-experience h2 {
             color: #ff6f61; /* 橙色标题，增强对比 */
             font-size: 2em; /* 大标题 */
@@ -266,6 +363,7 @@
             margin-bottom: 20px;
         }
 
+        /* 段落样式 */
         #project-experience p {
             font-size: 1.3em; /* 提升段落字体大小 */
             color: #99dce8; /* 浅蓝色文字 */
@@ -273,11 +371,13 @@
             margin-bottom: 15px;
         }
 
+        /* 列表样式 */
         #project-experience ul {
             list-style-type: square; /* 方块符号 */
             padding-left: 25px; /* 增加缩进 */
         }
 
+        /* 列表项样式 */
         #project-experience li {
             color: #ffffff; /* 列表项为白色 */
             font-size: 1.05em; /* 稍微增大字体 */
@@ -286,6 +386,7 @@
             transition: color 0.3s ease;
         }
 
+        /* 列表项悬停效果 */
         #project-experience li:hover {
             color: #ff6f61; /* 悬停时列表项变为橙色 */
         }
@@ -313,8 +414,16 @@
             border-left: 5px solid #3498db; /* 左侧蓝色边框 */
             position: relative;
             overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* 添加过渡效果 */
         }
 
+        /* 鼠标悬停时的悬浮效果 */
+        #work-experience:hover {
+            transform: translateY(-10px); /* 向上悬浮10px */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7); /* 强化的阴影效果 */
+        }
+
+        /* 标题样式 */
         #work-experience h2 {
             color: #3498db; /* 蓝色标题 */
             font-size: 2em;
@@ -323,6 +432,7 @@
             text-align: center;
         }
 
+        /* 段落样式 */
         #work-experience p {
             font-size: 1.1em;
             color: #d1e8ff; /* 浅蓝色文字 */
@@ -330,11 +440,13 @@
             margin-bottom: 15px;
         }
 
+        /* 列表样式 */
         #work-experience ul {
             list-style-type: circle; /* 圆形符号 */
             padding-left: 30px;
         }
 
+        /* 列表项样式 */
         #work-experience li {
             color: #e0f2f1; /* 列表项浅绿色 */
             font-size: 1.05em;
@@ -343,6 +455,7 @@
             transition: color 0.3s ease;
         }
 
+        /* 列表项悬停效果 */
         #work-experience li:hover {
             color: #3498db; /* 悬停时变为蓝色 */
         }

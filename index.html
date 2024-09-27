@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Personal Homepage</title>
+    <title>Jiahang's Personal Homepage</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -101,6 +101,61 @@
             line-height: 1.7;
         }
 
+        /* 专门为 Education section 定制的样式 */
+        #education {
+            background-color: #1c2833; /* 深蓝色背景 */
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* 强化阴影效果 */
+            margin-bottom: 40px; /* 与其他部分分隔开 */
+            border-left: 4px solid #f39c12; /* 左侧橙色边框 */
+            position: relative;
+        }
+
+        #education h2 {
+            color: #f39c12; /* 橙色标题 */
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #education p {
+            font-size: 1.1em;
+            color: #d0e0e3; /* 浅蓝色文字 */
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+
+        #education span {
+            float: right; /* 将日期右对齐 */
+            color: #f7dc6f; /* 黄色日期字体 */
+            font-size: 1em;
+        }
+
+        #education h3 {
+            color: #f7dc6f; /* 黄色子标题 */
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        #education ul {
+            list-style-type: circle; /* 圆形符号 */
+            padding-left: 25px;
+        }
+
+        #education li {
+            color: #e0f7fa; /* 列表项为浅蓝色 */
+            font-size: 1.05em;
+            margin-bottom: 10px;
+            line-height: 1.8;
+            transition: color 0.3s ease;
+        }
+
+        #education li:hover {
+            color: #f39c12; /* 悬停时变为橙色 */
+        }
+
         /* 专门为 Skills section 定制的样式 */
         #skills-section {
             background-color: #1b2a33; /* 更深的背景色，增加对比 */
@@ -171,7 +226,7 @@
             color: #ff6f61; /* 橙色标题，增强对比 */
             font-size: 2em; /* 大标题 */
             font-weight: bold; /* 加粗 */
-            text-align: left; /* 左对齐 */
+            text-align: center; /* 左对齐 */
             margin-bottom: 20px;
         }
 
@@ -211,8 +266,64 @@
             z-index: 0;
             pointer-events: none;
         }
-    </style>
 
+        /* 专门为 Work Experience section 定制的样式 */
+        #work-experience {
+            background-color: #212f3c; /* 深色背景 */
+            padding: 35px;
+            border-radius: 12px; /* 圆角 */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+            margin-bottom: 40px; /* 分隔与其他部分 */
+            border-left: 5px solid #3498db; /* 左侧蓝色边框 */
+            position: relative;
+            overflow: hidden;
+        }
+
+        #work-experience h2 {
+            color: #3498db; /* 蓝色标题 */
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #work-experience p {
+            font-size: 1.1em;
+            color: #d1e8ff; /* 浅蓝色文字 */
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        #work-experience ul {
+            list-style-type: circle; /* 圆形符号 */
+            padding-left: 30px;
+        }
+
+        #work-experience li {
+            color: #e0f2f1; /* 列表项浅绿色 */
+            font-size: 1.05em;
+            margin-bottom: 10px;
+            line-height: 1.8;
+            transition: color 0.3s ease;
+        }
+
+        #work-experience li:hover {
+            color: #3498db; /* 悬停时变为蓝色 */
+        }
+
+        /* 背景渐变效果 */
+        #work-experience::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(52, 152, 219, 0.2), transparent);
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
 </head>
 
 
@@ -230,6 +341,26 @@
         <p>Hello! My name is Jiahang Wang. I am currently a senior undergraduate with a strong foundation in mathematics and computer science. My academic journey has equipped me with hands-on experience in machine learning, data analysis, web development, and backend programming. I have worked on diverse projects, from optimizing machine learning models to developing robust backend systems. I am passionate about applying my technical skills in Python, R, Java, and C, and I am always eager to learn new technologies and solve complex problems in real-world applications.</p>
     </div>
 </section>
+
+<section id="education">
+    <h2>Education</h2>
+
+    <p><strong>McGill University</strong> <span>Sept. 2021 – May 2025</span></p>
+    <p>B.Sc. in Major: Computer Science; Minor: Mathematics</p>
+    <p>Montréal, Canada</p>
+<!--    <p><strong>Overall GPA: 3.9/4.0</strong></p>-->
+
+    <h3>Core Computer Science Courses</h3>
+    <ul>
+        <li>Cryptography & Data Security, Applied Machine Learning, Intro Robotics & Intelligent Systems, Intro to Data Science, Reinforcement Learning, Intro to Software Systems, Algorithms and Data Structures, Intro to Computer Systems, Theory of Computation, Programming Languages & Paradigms, etc.</li>
+    </ul>
+
+    <h3>Core Mathematics Courses</h3>
+    <ul>
+        <li>Discrete Structures, Applied Regression, Linear Algebra, Intro to Statistical Computing, Calculus 3, Analysis 1, Ordinary Differential Equations, Statistics, Fundamentals of Statistical Learning, Sampling Theory & Applications, Theory of interest, etc.</li>
+    </ul>
+</section>
+
 
 <section id="skills-section">
     <h2>Skills</h2>
@@ -251,12 +382,13 @@
 
 <section>
     <h2>Contact Information</h2>
-    <p>Email: <a href="mailto:example@example.com">jiahang.wang@mail.mcgill.ca</a></p>
+    <p>Email 1: <a href="mailto:jiahang.wang@mail.mcgill.ca">jiahang.wang@mail.mcgill.ca</a></p>
+    <p>Email 2: <a href="mailto:jiahangwang72@gmail.com">jiahangwang72@gmail.com</a></p>
     <p>Phone: +1 4383503113</p>
 </section>
 
 <section id="project-experience">
-    <h2>Project Experience</h2>
+    <h2>Academic Experiences</h2>
 
     <p><strong>Optimizing Machine Learning Models for Boston Housing and Wine Classification</strong></p>
     <p>Machine Learning Course - Main Coder and Co-Writer (September 20, 2023 - October 5, 2023)</p>
@@ -337,12 +469,77 @@
         <li>Compared algorithm performance across different hyperparameter combinations using custom visualizations.</li>
     </ul>
 
+    <p><strong>Performance Analysis of Value-Based and Policy-Based Methods in Reinforcement Learning</strong></p>
+    <p>Reinforcement Learning Course - Lead Programmer and Analyst (February 22, 2024 - March 19, 2024)</p>
+    <ul>
+        <li>Implemented and evaluated Q-learning, Expected Sarsa, Actor-Critic, and REINFORCE algorithms in reinforcement learning tasks using the MountainCar-v0 and CartPole-v1 environments.</li>
+        <li>Analyzed the impact of hyperparameters like learning rate (α) and exploration rate (ϵ) on the performance of value-based methods.</li>
+        <li>Investigated the effectiveness of policy-based methods and REINFORCE algorithm.</li>
+        <li>Conducted a detailed mathematical derivation of the Policy Gradient Theorem for the implementation of policy-based methods.</li>
+    </ul>
+
+    <p><strong>Dimensionality Reduction and Ranking Analysis in Genetic and Olympic Data</strong></p>
+    <p>Statistical Learning Course - Data Analyst and Researcher (January 23, 2024 - February 25, 2024)</p>
+    <ul>
+        <li>Conducted Principal Component Analysis (PCA) on genetic data, identifying key components representing significant genetic variations across different populations.</li>
+        <li>Applied PCA to analyze Olympic medal data and created an alternative ranking system for nations.</li>
+    </ul>
+
+    <p><strong>Singular Value Decomposition (SVD) for Word Embeddings and Image Compression</strong></p>
+    <p>Statistical Learning Course - Data Analyst and Researcher (February 18, 2024 - March 10, 2024)</p>
+    <ul>
+        <li>Developed word embeddings using SVD on a large co-occurrence matrix from a Wikipedia corpus.</li>
+        <li>Implemented SVD for image compression, analyzing the trade-offs between image detail and compression levels.</li>
+    </ul>
+
+    <p><strong>Matrix Completion and Movie Recommendation System</strong></p>
+    <p>Statistical Learning Course - Data Analyst and Researcher (March 3, 2024 - March 27, 2024)</p>
+    <ul>
+        <li>Developed a movie recommendation system using matrix factorization and SVD-based models, optimizing latent dimensions and integrating regularization.</li>
+        <li>Evaluated the system's accuracy using MSE and MAE metrics.</li>
+    </ul>
+
+    <p><strong>Statistical Estimation and Variance Analysis Using Horvitz-Thompson Estimator</strong></p>
+    <p>Sampling Theory Course - Data Analyst and Researcher (January 15, 2024 - February 9, 2024)</p>
+    <ul>
+        <li>Conducted simulations with the Horvitz-Thompson (HT) estimator to estimate population means and evaluated its unbiased nature.</li>
+        <li>Performed variance estimation and confidence interval analysis for the HT estimator.</li>
+    </ul>
+
+    <p><strong>Comparative Analysis of Sampling Methods</strong></p>
+    <p>Sampling Theory Course - Data Analyst and Researcher (February 12, 2024 - March 23, 2024)</p>
+    <ul>
+        <li>Compared various sampling techniques, including Simple Random Sampling Without Replacement (SRSWOR), Bernoulli Sampling, Systematic Sampling, Stratified Sampling, and Poisson Sampling, using municipal population data.</li>
+        <li>Explored the effects of data ordering and stratification on sampling variability.</li>
+    </ul>
+
+    <p><strong>Neural-Symbolic Approach for Vulnerability Discovery</strong></p>
+    <p>Research Assistant in Steve Ding's Lab (March 2024 - September 2024)</p>
+    <ul>
+        <li>Contributed to discovering software vulnerabilities using a neural-symbolic approach combining large language models (LLMs) with symbolic reasoning.</li>
+        <li>Processed and integrated large datasets to train LLMs on CWE descriptions and test cases for identifying vulnerabilities.</li>
+        <li>Assisted in training the LLM to infer vulnerabilities by cross-referencing source and sink points with CWE Sink/Source Rules.</li>
+        <li>Conducted comparisons between the neural-symbolic approach and traditional CWE checkers to evaluate effectiveness.</li>
+    </ul>
 </section>
 
-<section>
-    <h2>Hobbies</h2>
-    <p>I enjoy reading, sports, traveling, and exploring coding projects in my spare time.</p>
+<section id="work-experience">
+    <h2>Work Experience</h2>
+
+    <p><strong>Backend Development for 5G Active Network Performance Perception System</strong></p>
+    <p>Java Developer (Intern) at Chengdu Wangding Technology Co. Ltd. (June 15, 2023 - July 24, 2023)</p>
+    <ul>
+        <li>Participated in the backend development of the 5G Active Network Performance Perception System.</li>
+        <li>Contributed to interface development and testing in various project modules, enhancing network monitoring and analysis services.</li>
+        <li>Worked with Java, Spring Boot, and MySQL to develop and optimize system features.</li>
+        <li>Gained proficiency in backend technologies, frameworks, database operations, and business middleware.</li>
+    </ul>
 </section>
+
+<!--<section>-->
+<!--    <h2>Hobbies</h2>-->
+<!--    <p>I enjoy reading, sports, traveling, and exploring coding projects in my spare time.</p>-->
+<!--</section>-->
 
 <footer>
     <p>&copy; 2024 Personal Homepage</p>

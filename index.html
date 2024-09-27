@@ -367,8 +367,16 @@
         #project-experience p {
             font-size: 1.3em; /* 提升段落字体大小 */
             color: #99dce8; /* 浅蓝色文字 */
+            font-weight: 500; /* 增加字体粗细 */
             line-height: 1.7; /* 增加行距提升可读性 */
             margin-bottom: 15px;
+        }
+
+        /* span 元素的颜色设为白色 */
+        #project-experience span {
+            color: #ffffff; /* 白色 */
+            display: block; /* 将 span 转换为块级元素，便于缩进 */
+            text-indent: 50px; /* 设置缩进，值可以根据需要调整 */
         }
 
         /* 列表样式 */
@@ -510,6 +518,13 @@
     </ul>
 </section>
 
+<section id="contact-information">
+    <h2>Contact Information</h2>
+    <p>Email 1: <a href="mailto:jiahang.wang@mail.mcgill.ca">jiahang.wang@mail.mcgill.ca</a></p>
+    <p>Email 2: <a href="mailto:jiahangwang72@gmail.com">jiahangwang72@gmail.com</a></p>
+    <p>Phone: +1 438-350-3113</p>
+</section>
+
 
 <section id="skills-section">
     <h2>Skills</h2>
@@ -529,19 +544,11 @@
 </section>
 
 
-<section id="contact-information">
-    <h2>Contact Information</h2>
-    <p>Email 1: <a href="mailto:jiahang.wang@mail.mcgill.ca">jiahang.wang@mail.mcgill.ca</a></p>
-    <p>Email 2: <a href="mailto:jiahangwang72@gmail.com">jiahangwang72@gmail.com</a></p>
-    <p>Phone: +1 438-350-3113</p>
-</section>
-
-
 <section id="project-experience">
     <h2>Academic Experiences</h2>
 
     <p><strong>Optimizing Machine Learning Models for Boston Housing and Wine Classification</strong></p>
-    <p>Machine Learning Course - Main Coder and Co-Writer (September 20, 2023 - October 5, 2023)</p>
+    <span>Machine Learning Course - Main Coder and Co-Writer (September 20, 2023 - October 5, 2023)</span>
     <ul>
         <li>Implemented linear regression for Boston Housing dataset, achieving a lower Mean Squared Error, and logistic regression for Wine dataset, improving classification accuracy.</li>
         <li>Optimized hyperparameters like learning rates and batch sizes, enhancing model efficiency.</li>
@@ -549,7 +556,7 @@
     </ul>
 
     <p><strong>Classification of Image Data with Multilayer Perceptrons and Convolutional Neural Networks</strong></p>
-    <p>Machine Learning Course - Main Coder and Co-Writer (October 15, 2023 - October 30, 2023)</p>
+    <span>Machine Learning Course - Main Coder and Co-Writer (October 15, 2023 - October 30, 2023)</span>
     <ul>
         <li>Investigated neural network configurations for image classification using Fashion MNIST and CIFAR-10 datasets.</li>
         <li>Analyzed the impact of various factors such as model depth, activation functions, regularization, and optimizers on network performance.</li>
@@ -557,7 +564,7 @@
     </ul>
 
     <p><strong>Comparative Analysis of Naive Bayes and BERT in Emotion Classification of Textual Data</strong></p>
-    <p>Machine Learning Course - Main Coder and Co-Writer (November 2, 2023 - November 15, 2023)</p>
+    <span>Machine Learning Course - Main Coder and Co-Writer (November 2, 2023 - November 15, 2023)</span>
     <ul>
         <li>Conducted a study comparing Naive Bayes and BERT models on emotion classification using the 'Emotion' dataset from Hugging Face.</li>
         <li>Demonstrated BERT's advanced capabilities in understanding emotional nuances, outperforming traditional models.</li>
@@ -565,7 +572,7 @@
     </ul>
 
     <p><strong>Reproducibility Report on Offline Reinforcement Learning with Implicit Q-Learning (IQL)</strong></p>
-    <p>Machine Learning Course - Main Coder and Co-Writer (November 20, 2023 - December 7, 2023)</p>
+    <span>Machine Learning Course - Main Coder and Co-Writer (November 20, 2023 - December 7, 2023)</span>
     <ul>
         <li>Assessed the effectiveness of IQL in offline reinforcement learning, focusing on theoretical and practical aspects.</li>
         <li>Conducted experiments replicating key claims of IQL, including performance and computational efficiency evaluations.</li>
@@ -573,7 +580,7 @@
     </ul>
 
     <p><strong>Media Coverage Analysis of Taylor Swift: Sentiment and Focus in North America</strong></p>
-    <p>Data Science Course - Main Coder and Co-Writer (November 25, 2023 - December 11, 2023)</p>
+    <span>Data Science Course - Main Coder and Co-Writer (November 25, 2023 - December 11, 2023)</span>
     <ul>
         <li>Analyzed over 500 North American news articles using sentiment analysis techniques like TF-IDF.</li>
         <li>Identified key themes in media portrayal of Taylor Swift, including career achievements and personal life.</li>
@@ -581,7 +588,7 @@
     </ul>
 
     <p><strong>Implementing RRT Algorithm for Path Planning in Robotics</strong></p>
-    <p>Robotic Course - Main Coder (September 20, 2023 - December 6, 2023)</p>
+    <span>Robotic Course - Main Coder (September 20, 2023 - December 6, 2023)</span>
     <ul>
         <li>Developed and analyzed the Rapidly-exploring Random Tree (RRT) algorithm for path planning in robotics.</li>
         <li>Experimented with uniform and Gaussian sampling methods, optimizing step sizes and robot dimensions.</li>
@@ -589,7 +596,7 @@
     </ul>
 
     <p><strong>Combining PID Control and Reinforcement Learning for Inverted Pendulum System</strong></p>
-    <p>Robotic Course - Main Coder (September 20, 2023 - December 6, 2023)</p>
+    <span>Robotic Course - Main Coder (September 20, 2023 - December 6, 2023)</span>
     <ul>
         <li>Developed a PID control system for an inverted pendulum simulation, enhancing stability and response accuracy.</li>
         <li>Implemented Reinforcement Learning and Q-learning techniques to balance exploration and exploitation for optimal performance.</li>
@@ -597,7 +604,7 @@
     </ul>
 
     <p><strong>Developing a Filtering Technique for Accelerometer Data and Analyzing Gyroscope Data in Dynamic Environments</strong></p>
-    <p>Robotic Course - Main Coder (November 5, 2023 - November 21, 2023)</p>
+    <span>Robotic Course - Main Coder (November 5, 2023 - November 21, 2023)</span>
     <ul>
         <li>Designed a filtering technique for accelerometer data to accurately count steps, improving data reliability and noise reduction.</li>
         <li>Analyzed gyroscope data using Arduino Nano 33 IoT chip to understand sensor behavior in dynamic environments.</li>
@@ -605,14 +612,14 @@
     </ul>
 
     <p><strong>Simulation and Comparison of Multi-Armed Bandit Algorithms</strong></p>
-    <p>Reinforcement Learning Course - Lead Programmer and Analyst (January 11, 2024 - January 25, 2024)</p>
+    <span>Reinforcement Learning Course - Lead Programmer and Analyst (January 11, 2024 - January 25, 2024)</span>
     <ul>
         <li>Developed a simulator for Bernoulli multi-armed bandit problems to explore the performance of various RL algorithms like Epsilon Greedy, UCB, and Thompson Sampling.</li>
         <li>Analyzed the impact of different parameters on performance and provided insights for parameter selection in different environments.</li>
     </ul>
 
     <p><strong>Performance Comparison of Sarsa, Expected Sarsa, and Hybrid Sarsa Q in Reinforcement Learning</strong></p>
-    <p>Reinforcement Learning Course - Lead Programmer and Analyst (January 30, 2024 - February 15, 2024)</p>
+    <span>Reinforcement Learning Course - Lead Programmer and Analyst (January 30, 2024 - February 15, 2024)</span>
     <ul>
         <li>Implemented and evaluated Sarsa, Expected Sarsa, and Hybrid Sarsa Q algorithms in a reinforcement learning task using the "Taxi-v3" environment.</li>
         <li>Investigated the effect of different learning rates and exploration temperatures on algorithm performance.</li>
@@ -620,7 +627,7 @@
     </ul>
 
     <p><strong>Performance Analysis of Value-Based and Policy-Based Methods in Reinforcement Learning</strong></p>
-    <p>Reinforcement Learning Course - Lead Programmer and Analyst (February 22, 2024 - March 19, 2024)</p>
+    <span>Reinforcement Learning Course - Lead Programmer and Analyst (February 22, 2024 - March 19, 2024)</span>
     <ul>
         <li>Implemented and evaluated Q-learning, Expected Sarsa, Actor-Critic, and REINFORCE algorithms in reinforcement learning tasks using the MountainCar-v0 and CartPole-v1 environments.</li>
         <li>Analyzed the impact of hyperparameters like learning rate (α) and exploration rate (ϵ) on the performance of value-based methods.</li>
@@ -629,42 +636,42 @@
     </ul>
 
     <p><strong>Dimensionality Reduction and Ranking Analysis in Genetic and Olympic Data</strong></p>
-    <p>Statistical Learning Course - Data Analyst and Researcher (January 23, 2024 - February 25, 2024)</p>
+    <span>Statistical Learning Course - Data Analyst and Researcher (January 23, 2024 - February 25, 2024)</span>
     <ul>
         <li>Conducted Principal Component Analysis (PCA) on genetic data, identifying key components representing significant genetic variations across different populations.</li>
         <li>Applied PCA to analyze Olympic medal data and created an alternative ranking system for nations.</li>
     </ul>
 
     <p><strong>Singular Value Decomposition (SVD) for Word Embeddings and Image Compression</strong></p>
-    <p>Statistical Learning Course - Data Analyst and Researcher (February 18, 2024 - March 10, 2024)</p>
+    <span>Statistical Learning Course - Data Analyst and Researcher (February 18, 2024 - March 10, 2024)</span>
     <ul>
         <li>Developed word embeddings using SVD on a large co-occurrence matrix from a Wikipedia corpus.</li>
         <li>Implemented SVD for image compression, analyzing the trade-offs between image detail and compression levels.</li>
     </ul>
 
     <p><strong>Matrix Completion and Movie Recommendation System</strong></p>
-    <p>Statistical Learning Course - Data Analyst and Researcher (March 3, 2024 - March 27, 2024)</p>
+    <span>Statistical Learning Course - Data Analyst and Researcher (March 3, 2024 - March 27, 2024)</span>
     <ul>
         <li>Developed a movie recommendation system using matrix factorization and SVD-based models, optimizing latent dimensions and integrating regularization.</li>
         <li>Evaluated the system's accuracy using MSE and MAE metrics.</li>
     </ul>
 
     <p><strong>Statistical Estimation and Variance Analysis Using Horvitz-Thompson Estimator</strong></p>
-    <p>Sampling Theory Course - Data Analyst and Researcher (January 15, 2024 - February 9, 2024)</p>
+    <span>Sampling Theory Course - Data Analyst and Researcher (January 15, 2024 - February 9, 2024)</span>
     <ul>
         <li>Conducted simulations with the Horvitz-Thompson (HT) estimator to estimate population means and evaluated its unbiased nature.</li>
         <li>Performed variance estimation and confidence interval analysis for the HT estimator.</li>
     </ul>
 
     <p><strong>Comparative Analysis of Sampling Methods</strong></p>
-    <p>Sampling Theory Course - Data Analyst and Researcher (February 12, 2024 - March 23, 2024)</p>
+    <span>Sampling Theory Course - Data Analyst and Researcher (February 12, 2024 - March 23, 2024)</span>
     <ul>
         <li>Compared various sampling techniques, including Simple Random Sampling Without Replacement (SRSWOR), Bernoulli Sampling, Systematic Sampling, Stratified Sampling, and Poisson Sampling, using municipal population data.</li>
         <li>Explored the effects of data ordering and stratification on sampling variability.</li>
     </ul>
 
     <p><strong>Neural-Symbolic Approach for Vulnerability Discovery</strong></p>
-    <p>Research Assistant in Steve Ding's Lab (March 2024 - September 2024)</p>
+    <span>Research Assistant in Steve Ding's Lab (March 2024 - September 2024)</span>
     <ul>
         <li>Contributed to discovering software vulnerabilities using a neural-symbolic approach combining large language models (LLMs) with symbolic reasoning.</li>
         <li>Processed and integrated large datasets to train LLMs on CWE descriptions and test cases for identifying vulnerabilities.</li>
